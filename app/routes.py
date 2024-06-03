@@ -1,7 +1,9 @@
-import os
+from flask import current_app, render_template, request, send_from_directory, redirect, url_for
 from app import create_app
+from .utils import pdf_to_jpg
 
 app = create_app()
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    # Your route handling code
