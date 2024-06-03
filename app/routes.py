@@ -1,4 +1,5 @@
 from flask import current_app, render_template, request, send_from_directory, redirect, url_for
+from app import create_app
 from .utils import pdf_to_jpg
 
 def create_routes(app):
