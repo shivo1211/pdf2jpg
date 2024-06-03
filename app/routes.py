@@ -16,7 +16,7 @@ def create_routes(app):
             if file:
                 pdf_to_jpg(file)
                 return redirect(url_for('uploaded_file', filename='output.jpg'))
-        return render_template('index.html')
+        return render_template('\templates\index.html')
 
     @app.route('/uploads/<filename>')
     def uploaded_file(filename):
