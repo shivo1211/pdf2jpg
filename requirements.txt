@@ -27,7 +27,6 @@ Pygments==2.18.0
 PyMuPDF==1.24.5
 PyMuPDFb==1.24.3
 python-dateutil==2.9.0.post0
-pywin32==306
 pyzmq==26.0.3
 six==1.16.0
 stack-data==0.6.3
